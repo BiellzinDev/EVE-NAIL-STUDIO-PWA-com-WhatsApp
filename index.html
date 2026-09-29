@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eve Nail Studio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <link rel="stylesheet" href="./Images/Logo-certo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!-- Adiciono o link com o arquivo JSON do manifesto -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- Faço com que identifique o thema do celular e aplique as mesmas configurações -->
+    <meta name="theme-color" content="#d98c9a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="./Images/Logo-certo.webp">
+    
+
+    <script src="./script/nav.js" defer></script>
+    <script src="./script/faq.js" defer></script>
+    <script src="./script/btnEstrelas.js" defer></script>
+    <script src="./service-worker.js" defer></script>
+    <script src="./script/whatsApp.js" defer></script>
+</head>
+
+<body>
+    <header class="flex-items-center-justfy-center header">
+        <section id="hero" class="flex-items-center-justfy-center limitador-header todo">
+            <article class="limiter-logo"><a href="#home"><img src="./Images/Logo-certo.webp" alt="Logo"></a></article>
+            <article class="text-logo"></article>
+        </section>
+    </header>
+    <nav class="nav flex-items-center-justfy-center">
+        <a href="#hero" class="comon"><i class="fi fi-rr-home icon-home"></i></a>
+        <a href="#studio" class="comon"><i class="fi fi-rr-couch icon-studio"></i></a>
+        <a href="#servico" class="comon"><i class="fi fi-rr-manicure icon-nail"></i></a>
+        <a href="#contato" class="comon"><i class="fi fi-rr-marker icon-mesage"></i></a>
+        <a href="#feedback" class="comon"><i class="fi fi-rr-memo-pad icon-feedback"></i></a>
+        <a href="#faq" class="comon"><i class="fi fi-rr-comments-question icon-question"></i></a>
+        </nav>
+    <main class="flex-items-center-justfy-center">
+        <section class="flex-items-center-justfy-center hero">
+            <picture>
+                <img src="./Images/eve-nail-studio-hero-background.webp" alt="">
+            </picture>
+            <article class="flex-items-center-justfy-center hero box-principal text-hero">
+                <p class="text-hero">O espaço perfeito para você,<br> Nail art para quem ama o diferente</p>
+            </article>
+            <article class="bottom-hero flex-items-center-justfy-center  ">
+            <button class="btn flex-items-center-justfy-center btn-whats"><span>Agende seu momento</span>
+            <picture><i class="fi fi-rs-arrow-right"></i></picture></button>
+            </article>
+        </section>
+        <section class="service flex-items-center-justfy-center">
+            <section class="box-service flex-items-center-justfy-center">
+                    <article class="box-unhas box-1 flex-items-center-justfy-center">
+                        <h3>Nail art e Blindagem</h3>
+                    </article>
+                    <article class="box-unhas box-2 flex-items-center-justfy-center">
+                        <h3>Esmaltação em gel</h3>
+                    </article>
+                    <article class="box-unhas box-3 flex-items-center-justfy-center">
+                        <h3>Manicure Tradicional</h3>
+                    </article>
+                    <article class="box-unhas box-4 flex-items-center-justfy-center">
+                        <h3>Pedicure</h3>
+                    </article>
+                    <article class="box-unhas box-5 flex-items-center-justfy-center">
+                        <h3>Esmaltação Comum</h3>
+                    </article>
+                    <article class="box-unhas box-6 flex-items-center-justfy-center">
+                        <h3>Spa das Mãos e dos Pés</h3>
+                    </article>
+                    <article class="box-unhas box-7 flex-items-center-justfy-center">
+                        <h3>Manutenção de Alongamento</h3>
+                    </article>
+                    <article class="box-unhas box-8 flex-items-center-justfy-center">
+                        <h3>Remoção de alongamento ou esmaltação em gel</h3>
+                    </article>
+            </section>
+        </section>
+        <section class=" frase-efeito flex-items-center-justfy-center">
+            <picture class="star"><img src="./Images/alone-estrela.webp" alt=""></picture>
+            <p>UNHAS COM ATITUDE,<br>NÃO COM REGRA</p>
+            <picture class="star"><img src="./Images/alone-estrela.webp" alt=""></picture>
+        </section>
+        <section class="box-contato flex-items-center-justfy-center">
+            <h2>Contate-nos</h2>
+            <p>O caminho até seu destino</p>
+            <section class="caixa-contato flex-items-center-justfy-center">
+                <article class="contato flex-items-center-justfy-center">
+                    <h4>Nosso endereço:</h4>
+                    <p>R. Américo Vespúcio, 12 - Sala 01</p>
+                    <p>Parque Imperi al, Barueri - SP</p>
+                </article>
+                <article class="contato flex-items-center-justfy-center">
+                    <h4>Horário de atendimento:</h4>
+                    <p>Segunda a Sabádo: 09h as 18h</p>
+                </article>
+                <article class="contato flex-items-center-justfy-center">
+                    <h4>WhatsApp:</h4>
+                    <p>(11) 98931-6769</p>
+                </article>
+            </section>
+        </section>
+        <section class="box-whats flex-items-center-justfy-center">
+            <button class="btn-whats app">Falar no WhatsApp</button>
+            <picture class="whats"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp icon-whats">
+	        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	        <path d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5" />
+            </svg></picture>
+        </section>
+        <section class="mapa flex-items-center-justfy-center">
+            <h2>Como chegar?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7318.8524275638465!2d-46.806084!3d-23.481153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefde82bc83913%3A0xe17397a729bbf3dc!2sR.%20Am%C3%A9rico%20Vesp%C3%BAcio%2C%20N%C2%B0%2012%20-%20Parque%20Imperial%2C%20Barueri%20-%20SP%2C%2006462-300!5e0!3m2!1spt-BR!2sbr!4v1789925617671!5m2!1spt-BR!2sbr" width="100%" height="336" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section >
+        <section class="studio flex-items-center-justfy-center">
+            <h2 id="studio" class="title-studio todo">O Studio</h2>
+            <p>O EVE NAIL STUDIO é um espaço coletivo com outras profissionais da area da beleza, </p>
+            <picture class="box-studio">
+                <img src="./Images/Studio-cadeiras.webp" alt="Imagem das caideias">
+            </picture>
+            <picture class="box-studio">
+                <img src="./Images/Studio-mesas.webp" alt="Imagem das mesas">
+            </picture>
+        </section>
+        <section  class="servico flex-items-center-justfy-center">
+            <h2 id="servico" class="title-servico todo">Serviços</h2>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Nail art e Blindagem</h3>
+                <p>Personalização das unhas por meio de desenhos, pinturas, pedrarias, efeitos, adesivos e diferentes técnicas de decoração. É uma das formas de tornar o trabalho mais criativo e exclusivo.</p>
+                <picture class="box-servico"><img src="./Images/unha-para-nail-art.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Esmaltação em Gel</h3>
+                <p>Personalização das unhas por meio de desenhos, pinturas, pedrarias, efeitos, adesivos e diferentes técnicas de decoração. É uma das formas de tornar o trabalho mais criativo e exclusivo.</p>
+                <picture class="box-servico"><img src="./Images/esmaltação-em-gel.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Manicure Tradicional</h3>
+                <p>Cuidados básicos com as unhas das mãos, incluindo corte, lixamento, remoção ou tratamento das cutículas e aplicação de esmalte.</p>
+                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Pedicure</h3>
+                <p>Serviço semelhante à manicure, mas realizado nas unhas dos pés. Também pode incluir cuidados com a pele e hidratação. </p>
+                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Esmaltação Comum</h3>
+                <p>Aplicação de esmalte tradicional nas unhas, permitindo que a cliente escolha entre diferentes cores, acabamentos e estilos.</p>
+                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Spa das mãos e dos pés</h3>
+                <p>Tratamento focado no cuidado e relaxamento, podendo incluir esfoliação, hidratação, massagem e cuidados especiais com a pele.</p>
+                <picture class="box-servico"><img src="./Images/unhas-francesa.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Manutenção de alongamento</h3>
+                <p>Procedimento realizado após o crescimento da unha natural para recuperar o formato e preencher o espaço próximo à cutícula, prolongando a durabilidade do alongamento.</p>
+                <picture class="box-servico"><img src="./Images/unhas-bege.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+            <section class="box-servicos flex-items-center-justfy-center">
+                <h3 class="sub-servico">Remoção de alongamento ou esmaltação em gel</h3>
+                <p>Retirada segura de produtos aplicados anteriormente, utilizando técnicas e ferramentas adequadas para preservar a integridade das unhas naturais. </p>
+                <picture class="box-servico"><img src="./Images/unhas-bege.webp" alt="Imagem esmaltação em gel"></picture>
+            </section>
+        </section>
+        <section class="contato flex-items-center-justfy-center">
+            <h2 id="contato" class="title-contato todo">Entre em contato</h2>
+            <p>Sempre a disposição para promover a melhor experiência a você, agende seu horário</p>
+        </section>
+        <section class="info-contato box-contato flex-items-center-justfy-center">
+            <h2 class="title-info">Informações de Contato</h2>
+            <section class="caixa-info caixa-contato flex-items-center-justfy-center">
+                <article class="contato-icon contato flex-items-center-justfy-center">
+                    <picture class="icon-contatos">
+                        <img src="./Images/localizacao-icon.webp" alt="">
+                    </picture>
+                    <article>
+                        <h4>Nosso endereço:</h4>
+                        <p>R. Américo Vespúcio, 12 - Sala 01</p>
+                        <p>Parque Imperi al, Barueri - SP</p>
+                    </article>
+                </article>
+                <article class="contato-icon contato flex-items-center-justfy-center">
+                    <picture class="icon-contatos">
+                        <img src="./Images/relogio-icon.webp" alt="">
+                    </picture>
+                    <article>
+                        <h4>Horário de atendimento:</h4>
+                        <p>Segunda a Sabádo: 09h as 18h</p>
+                    </article>
+                </article>
+                <article class="contato-icon contato flex-items-center-justfy-center">
+                    <picture class="icon-contatos">
+                        <img src="./Images/whats-app-icon.webp" alt="">
+                    </picture>
+                    <article>
+                        <h4>WhatsApp:</h4>
+                        <p>R. Américo Vespúcio, 12 - Sala 01</p>
+                        <p>(11) 98931-6769</p>
+                    </article>
+                </article>
+                <p>Atendimento apenas com horário marcado!</p>
+            </section>
+            <h2 class="title-media">Siga-nos nas redes sociais</h2>
+        </section>
+        <section class="feed flex-items-center-justfy-center">
+            <h2 id="feedback" class="title-feed todo">Feedback</h2>
+            <p class="p-feed">Sua opnião é muito importante para nós! Conte como foi sua experiência e nos ajude a melhorar cada vez mais.</p>
+            <section class="caixa-feed flex-items-center-justfy-center">
+                <article class="limiter-feed flex-items-center-justfy-center">
+                    <article class="box-feed flex-items-center-justfy-center">
+                        <article class="limiter-label flex-items-center-justfy-center">
+                            <picture><i class="fi fi-rr-user icon-user"></i></picture>
+                            <label for="nome">Seu nome:</label>
+                        </article>
+                        <input type="text" placeholder="Digite seu nome completo">
+                    </article>
+                </article>
+                <article class="limiter-feed flex-items-center-justfy-center">
+                    <article class="box-feed flex-items-center-justfy-center">
+                        <article class="limiter-label flex-items-center-justfy-center">
+                            <picture><i class="fi fi-rr-smile icon-rosto"></i></picture>
+                            <label for="experiencia">Como foi sua experiência:</label>
+                        </article>
+                        <select name="experiencia" id="experiencia">
+                            <option value="opcao" class="option">Selecione uma opção</option>
+                            <option value="excelente">Excelente</option>
+                            <option value="Muito satisfatória">Muito satisfatória</option>
+                            <option value="Satisfatória">Satisfatória</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Insatisfatória">Insatisfatória</option>
+                        </select>
+                    </article>
+                </article>
+                <article class="limiter-feed flex-items-center-justfy-center">
+                    <article class="box-feed flex-items-center-justfy-center">
+                        <article class="limiter-label flex-items-center-justfy-center">
+                            <picture><i class="fi fi-rr-comment icon-feedb"></i></picture>
+                            <label for="feedback">Seu comentário:</label>
+                        </article>
+                        <textarea name="feedback" id="feedback" placeholder="Conte-nos o que você achou do atendimento, do serviço, do ambiente...." ></textarea>
+                    </article>
+                </article>
+                <article class="limiter-feed flex-items-center-justfy-center">
+                    <article class="box-feed flex-items-center-justfy-center">
+                        <article class="limiter-label flex-items-center-justfy-center">
+                            <label for="star">Avalie seu atendimento:</label>
+                        </article>
+                        <article class="stars flex-items-center-justfy-center">
+                            <button class="btn-star" data-star="1"><i class="fi fi-rr-star"></i></button>
+                            <button class="btn-star" data-star="2"><i class="fi fi-rr-star"></i></button>
+                            <button class="btn-star" data-star="3"><i class="fi fi-rr-star" ></i></button>
+                            <button class="btn-star" data-star="4"><i class="fi fi-rr-star"></i></button>
+                            <button class="btn-star" data-star="5"><i class="fi fi-rr-star"></i></button>
+                        </article>
+                    </article>
+                </article>
+                <button class="btn-send-feed flex-items-center-justfy-center">
+                    <picture><i class="fi fi-rr-paper-plane icon-plane"></i></picture>
+                    <p>Enviar Feedback</p>
+                </button>
+            </section>
+        <section class="faq flex-items-center-justfy-center">
+            <h2 id="faq" class="todo">FAQ</h2>
+            <p class="p-faq">Tire suas dúvidas sobre nossos serviços, agendamentos e muito mais</p>
+            <section class="limiter-faq flex-items-center-justfy-center">
+                <article class="search flex-items-center-justfy-center">
+                    <picture><i class="fi fi-br-search icon-search"></i></picture>
+                    <input type="search" placeholder="Busque uma pergunta...">
+                </article>
+                <article class="container-sanfona flex-items-center-justfy-center" data-id="agendamento">
+                    <div class="accordion flex-items-center-justfy-center">
+                        <button class="accordion-header flex-items-center-justfy-center">
+                            <div class="limiter-calendar flex-items-center-justfy-center">
+                                <picture class="calendar"><i class="fi fi-rr-calendar icon-calendar"></i></picture>
+                                <span>Agendamentos</span>
+                            </div>
+                            <i class="fi fi-sr-angle-down"></i>
+                        </button>
+                        <div class="accordion-body" data-id="agendamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Como faço para agendar um horário?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="agendamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>É necessário pagar algum adiantamento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="agendamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Posso remarcar ou cancelar meu horário?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body" hidden>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="container-sanfona flex-items-center-justfy-center" data-id="servicos">
+                    <div class="accordion flex-items-center-justfy-center">
+                        <button class="accordion-header flex-items-center-justfy-center">
+                            <div class="limiter-calendar flex-items-center-justfy-center">
+                                <picture class="calendar"><i class="fi fi-rs-finger-nail"></i></picture>
+                                <span>Procedimentos</span>
+                            </div>
+                            <i class="fi fi-sr-angle-down"></i>
+                        </button>
+                        <div class="accordion-body" data-id="servicos">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Quanto tempo dura o procedimento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="servicos">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Quais os cuidados após a aplicação?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="servicos">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Vocês trabalham com alongamento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body" hidden>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="container-sanfona flex-items-center-justfy-center" data-id="pagamento">
+                    <div class="accordion flex-items-center-justfy-center">
+                        <button class="accordion-header flex-items-center-justfy-center">
+                            <div class="limiter-calendar flex-items-center-justfy-center">
+                                <picture class="calendar"><i class="fi fi-br-credit-card"></i></picture>
+                                <span>Pagamentos</span>
+                            </div>
+                            <i class="fi fi-sr-angle-down"></i>
+                        </button>
+                        <div class="accordion-body" data-id="pagamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Quais as formas de pagamento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="pagamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Vocês aceitam Pix?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="pagamento">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>É possível parcelar o pagamento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body" hidden>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="container-sanfona flex-items-center-justfy-center" data-id="local">
+                    <div class="accordion flex-items-center-justfy-center">
+                        <button class="accordion-header flex-items-center-justfy-center">
+                            <div class="limiter-calendar flex-items-center-justfy-center">
+                                <picture class="calendar"><i class="fi fi-rs-marker"></i></picture>
+                                <span>Endereço</span>
+                            </div>
+                            <i class="fi fi-sr-angle-down"></i>
+                        </button>
+                        <div class="accordion-body" data-id="local">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Onde fica o studio?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="local">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Qual o horário de funcionamento?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                        <div class="accordion-body" data-id="local">
+                            <button class="accordion-sub flex-items-center-justfy-center">
+                            <span>Há estacionamento próximo?</span>
+                            <i class="fi fi-sr-angle-down"></i>
+                            </button>
+                            <div class="accordion-sub-body" hidden>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        
+    </main>
+    <footer >
+        <p>&copy; Página Desenvolvida na FIEB TECH "EVE NAIL DESIGN"</p>
+    </footer>
+
+</body>
+
+</html>
