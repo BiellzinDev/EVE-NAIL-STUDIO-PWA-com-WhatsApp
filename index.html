@@ -23,34 +23,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
     <!-- Adiciono o link com o arquivo JSON do manifesto -->
-    <link rel="manifest" href="./manifest.json">
+    <!-- <link rel="manifest" href="./manifest.json"> -->
     <!-- Faço com que identifique o thema do celular e aplique as mesmas configurações -->
-    <meta name="theme-color" content="#d98c9a">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="./Images/Logo-certo.webp">
+    <!-- <meta name="theme-color" content="#d98c9a"> -->
+    <!-- <meta name="mobile-web-app-capable" content="yes"> -->
+    <!-- <link rel="apple-touch-icon" href="./Images/Logo-certo.webp"> -->
     
 
     <script src="./script/nav.js" defer></script>
     <script src="./script/faq.js" defer></script>
     <script src="./script/btnEstrelas.js" defer></script>
-    <script src="./service-worker.js" defer></script>
+    <!-- <script src="./service-worker.js" defer></script> -->
     <script src="./script/whatsApp.js" defer></script>
+    <!-- <script src="./script/spa.js" defer></script> -->
 </head>
 
 <body>
     <header class="flex-items-center-justfy-center header">
-        <section id="hero" class="flex-items-center-justfy-center limitador-header todo">
+        <section id="hero" class="flex-items-center-justfy-center limitador-header todo spa-section active-section">
             <article class="limiter-logo"><a href="#home"><img src="./Images/Logo-certo.webp" alt="Logo"></a></article>
             <article class="text-logo"></article>
         </section>
     </header>
     <nav class="nav flex-items-center-justfy-center">
-        <a href="#hero" class="comon"><i class="fi fi-rr-home icon-home"></i></a>
-        <a href="#studio" class="comon"><i class="fi fi-rr-couch icon-studio"></i></a>
-        <a href="#servico" class="comon"><i class="fi fi-rr-manicure icon-nail"></i></a>
-        <a href="#contato" class="comon"><i class="fi fi-rr-marker icon-mesage"></i></a>
-        <a href="#feedback" class="comon"><i class="fi fi-rr-memo-pad icon-feedback"></i></a>
-        <a href="#faq" class="comon"><i class="fi fi-rr-comments-question icon-question"></i></a>
+        <a href="#hero" class="comon navegacao active" data-target="hero"><i class="fi fi-rr-home icon-home"></i></a>
+        <a href="#studio" class="comon navegacao" data-target="studio"><i class="fi fi-rr-couch icon-studio"></i></a>
+        <a href="#servico" class="comon navegacao" data-target="servico"><i class="fi fi-rr-manicure icon-nail"></i></a>
+        <a href="#contato" class="comon navegacao" data-target="contato"><i class="fi fi-rr-marker icon-mesage"></i></a>
+        <a href="#feedback" class="comon navegacao" data-target="feedback"><i class="fi fi-rr-memo-pad icon-feedback"></i></a>
+        <a href="#faq" class="comon navegacao" data-target="faq"><i class="fi fi-rr-comments-question icon-question"></i></a>
         </nav>
     <main class="flex-items-center-justfy-center">
         <section class="flex-items-center-justfy-center hero">
@@ -67,29 +68,45 @@
         </section>
         <section class="service flex-items-center-justfy-center">
             <section class="box-service flex-items-center-justfy-center">
-                    <article class="box-unhas box-1 flex-items-center-justfy-center">
-                        <h3>Nail art e Blindagem</h3>
+                    <article class="box-unhas  flex-items-center-justfy-center">
+                        <figure class="flex-items-center-justfy-center box">
+                            <img src="./Images/Nail-art.webp" alt="Imagem de Unha">
+                            <figcaption>
+                                <h3>Nail art e Blindagem</h3>
+                            </figcaption>
+                        </figure>
                     </article>
-                    <article class="box-unhas box-2 flex-items-center-justfy-center">
-                        <h3>Esmaltação em gel</h3>
+                    <article class="box-unhas  flex-items-center-justfy-center">
+                        <figure class="flex-items-center-justfy-center box">
+                            <img src="./Images/Manutencao-alongamento.webp" alt="Imagem de Unha">
+                            <figcaption>
+                                <h3>Manutenção de Alongamento</h3>
+                            </figcaption>
+                        </figure>
                     </article>
-                    <article class="box-unhas box-3 flex-items-center-justfy-center">
-                        <h3>Manicure Tradicional</h3>
+                    <article class="box-unhas  flex-items-center-justfy-center">
+                        <figure class="flex-items-center-justfy-center box">
+                            <img src="./Images/Esmaltacao-comum.webp" alt="Imagem de Unha">
+                            <figcaption>
+                                <h3>Esmaltação Comum</h3>
+                            </figcaption>
+                        </figure>
                     </article>
-                    <article class="box-unhas box-4 flex-items-center-justfy-center">
-                        <h3>Pedicure</h3>
+                    <article class="box-unhas  flex-items-center-justfy-center">
+                        <figure class="flex-items-center-justfy-center box">
+                            <img src="./Images/Esmaltacao-em-gel.webp" alt="Imagem de Unha">
+                            <figcaption>
+                                <h3>Esmaltação em Gel</h3>
+                            </figcaption>
+                        </figure>
                     </article>
-                    <article class="box-unhas box-5 flex-items-center-justfy-center">
-                        <h3>Esmaltação Comum</h3>
-                    </article>
-                    <article class="box-unhas box-6 flex-items-center-justfy-center">
-                        <h3>Spa das Mãos e dos Pés</h3>
-                    </article>
-                    <article class="box-unhas box-7 flex-items-center-justfy-center">
-                        <h3>Manutenção de Alongamento</h3>
-                    </article>
-                    <article class="box-unhas box-8 flex-items-center-justfy-center">
-                        <h3>Remoção de alongamento ou esmaltação em gel</h3>
+                    <article class="box-unhas  flex-items-center-justfy-center">
+                        <figure class="flex-items-center-justfy-center box">
+                            <img src="./Images/Manicure-tradicional.webp" alt="Imagem de Unha">
+                            <figcaption>
+                                <h3>Manicure Tradicional</h3>
+                            </figcaption>
+                        </figure>
                     </article>
             </section>
         </section>
@@ -102,7 +119,7 @@
             <h2>Contate-nos</h2>
             <p>O caminho até seu destino</p>
             <section class="caixa-contato flex-items-center-justfy-center">
-                <article class="contato flex-items-center-justfy-center">
+                <article class="contato flex-items-center-justfy-center"> <!-- addrees-->
                     <h4>Nosso endereço:</h4>
                     <p>R. Américo Vespúcio, 12 - Sala 01</p>
                     <p>Parque Imperi al, Barueri - SP</p>
@@ -114,7 +131,7 @@
                 <article class="contato flex-items-center-justfy-center">
                     <h4>WhatsApp:</h4>
                     <p>(11) 98931-6769</p>
-                </article>
+                </article> <!-- addrees-->
             </section>
         </section>
         <section class="box-whats flex-items-center-justfy-center">
@@ -128,9 +145,9 @@
             <h2>Como chegar?</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7318.8524275638465!2d-46.806084!3d-23.481153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefde82bc83913%3A0xe17397a729bbf3dc!2sR.%20Am%C3%A9rico%20Vesp%C3%BAcio%2C%20N%C2%B0%2012%20-%20Parque%20Imperial%2C%20Barueri%20-%20SP%2C%2006462-300!5e0!3m2!1spt-BR!2sbr!4v1789925617671!5m2!1spt-BR!2sbr" width="100%" height="336" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </section >
-        <section class="studio flex-items-center-justfy-center">
+        <section class="studio flex-items-center-justfy-center spa-section">
             <h2 id="studio" class="title-studio todo">O Studio</h2>
-            <p>O EVE NAIL STUDIO é um espaço coletivo com outras profissionais da area da beleza, </p>
+            <p>O EVE NAIL STUDIO é um espaço  dedicado para seu momento, com materiais e equipamentos de qualidade, esterealizados. Prontos para deixar suas unhas um arraso! Afinal, você já é linda, vamos realçar isso!</p>
             <picture class="box-studio">
                 <img src="./Images/Studio-cadeiras.webp" alt="Imagem das caideias">
             </picture>
@@ -138,50 +155,35 @@
                 <img src="./Images/Studio-mesas.webp" alt="Imagem das mesas">
             </picture>
         </section>
-        <section  class="servico flex-items-center-justfy-center">
+        <section  class="servico flex-items-center-justfy-center spa-section">
             <h2 id="servico" class="title-servico todo">Serviços</h2>
             <section class="box-servicos flex-items-center-justfy-center">
-                <h3 class="sub-servico">Nail art e Blindagem</h3>
+                <h3 class="sub-servico">Nail art</h3>
                 <p>Personalização das unhas por meio de desenhos, pinturas, pedrarias, efeitos, adesivos e diferentes técnicas de decoração. É uma das formas de tornar o trabalho mais criativo e exclusivo.</p>
-                <picture class="box-servico"><img src="./Images/unha-para-nail-art.webp" alt="Imagem esmaltação em gel"></picture>
+                <picture class="box-servico"><img src="./Images/Nail-art.webp" alt="Imagem esmaltação em gel"></picture>
             </section>
             <section class="box-servicos flex-items-center-justfy-center">
                 <h3 class="sub-servico">Esmaltação em Gel</h3>
-                <p>Personalização das unhas por meio de desenhos, pinturas, pedrarias, efeitos, adesivos e diferentes técnicas de decoração. É uma das formas de tornar o trabalho mais criativo e exclusivo.</p>
-                <picture class="box-servico"><img src="./Images/esmaltação-em-gel.webp" alt="Imagem esmaltação em gel"></picture>
+                <p>Aplicação de esmalte específico que é curado em cabine UV ou LED. Possui maior durabilidade e resistência em comparação ao esmalte tradicional.</p>
+                <picture class="box-servico"><img src="./Images/Esmaltacao-em-gel.webp" alt="Imagem esmaltação em gel"></picture>
             </section>
             <section class="box-servicos flex-items-center-justfy-center">
                 <h3 class="sub-servico">Manicure Tradicional</h3>
                 <p>Cuidados básicos com as unhas das mãos, incluindo corte, lixamento, remoção ou tratamento das cutículas e aplicação de esmalte.</p>
-                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
-            </section>
-            <section class="box-servicos flex-items-center-justfy-center">
-                <h3 class="sub-servico">Pedicure</h3>
-                <p>Serviço semelhante à manicure, mas realizado nas unhas dos pés. Também pode incluir cuidados com a pele e hidratação. </p>
-                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
+                <picture class="box-servico"><img src="./Images/Manicure-tradicional.webp" alt="Imagem esmaltação em gel"></picture>
             </section>
             <section class="box-servicos flex-items-center-justfy-center">
                 <h3 class="sub-servico">Esmaltação Comum</h3>
                 <p>Aplicação de esmalte tradicional nas unhas, permitindo que a cliente escolha entre diferentes cores, acabamentos e estilos.</p>
-                <picture class="box-servico"><img src="./Images/unhas-extensao.webp" alt="Imagem esmaltação em gel"></picture>
-            </section>
-            <section class="box-servicos flex-items-center-justfy-center">
-                <h3 class="sub-servico">Spa das mãos e dos pés</h3>
-                <p>Tratamento focado no cuidado e relaxamento, podendo incluir esfoliação, hidratação, massagem e cuidados especiais com a pele.</p>
-                <picture class="box-servico"><img src="./Images/unhas-francesa.webp" alt="Imagem esmaltação em gel"></picture>
+                <picture class="box-servico"><img src="./Images/Esmaltacao-comum.webp" alt="Imagem esmaltação em gel"></picture>
             </section>
             <section class="box-servicos flex-items-center-justfy-center">
                 <h3 class="sub-servico">Manutenção de alongamento</h3>
                 <p>Procedimento realizado após o crescimento da unha natural para recuperar o formato e preencher o espaço próximo à cutícula, prolongando a durabilidade do alongamento.</p>
-                <picture class="box-servico"><img src="./Images/unhas-bege.webp" alt="Imagem esmaltação em gel"></picture>
-            </section>
-            <section class="box-servicos flex-items-center-justfy-center">
-                <h3 class="sub-servico">Remoção de alongamento ou esmaltação em gel</h3>
-                <p>Retirada segura de produtos aplicados anteriormente, utilizando técnicas e ferramentas adequadas para preservar a integridade das unhas naturais. </p>
-                <picture class="box-servico"><img src="./Images/unhas-bege.webp" alt="Imagem esmaltação em gel"></picture>
+                <picture class="box-servico"><img src="./Images/Manutencao-alongamento.webp" alt="Imagem esmaltação em gel"></picture>
             </section>
         </section>
-        <section class="contato flex-items-center-justfy-center">
+        <section class="contato flex-items-center-justfy-center spa-section">
             <h2 id="contato" class="title-contato todo">Entre em contato</h2>
             <p>Sempre a disposição para promover a melhor experiência a você, agende seu horário</p>
         </section>
@@ -221,7 +223,7 @@
             </section>
             <h2 class="title-media">Siga-nos nas redes sociais</h2>
         </section>
-        <section class="feed flex-items-center-justfy-center">
+        <section class="feed flex-items-center-justfy-center spa-section">
             <h2 id="feedback" class="title-feed todo">Feedback</h2>
             <p class="p-feed">Sua opnião é muito importante para nós! Conte como foi sua experiência e nos ajude a melhorar cada vez mais.</p>
             <section class="caixa-feed flex-items-center-justfy-center">
@@ -278,14 +280,10 @@
                     <p>Enviar Feedback</p>
                 </button>
             </section>
-        <section class="faq flex-items-center-justfy-center">
+        <section class="faq flex-items-center-justfy-center spa-section">
             <h2 id="faq" class="todo">FAQ</h2>
             <p class="p-faq">Tire suas dúvidas sobre nossos serviços, agendamentos e muito mais</p>
             <section class="limiter-faq flex-items-center-justfy-center">
-                <article class="search flex-items-center-justfy-center">
-                    <picture><i class="fi fi-br-search icon-search"></i></picture>
-                    <input type="search" placeholder="Busque uma pergunta...">
-                </article>
                 <article class="container-sanfona flex-items-center-justfy-center" data-id="agendamento">
                     <div class="accordion flex-items-center-justfy-center">
                         <button class="accordion-header flex-items-center-justfy-center">
@@ -301,16 +299,16 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Pelo telefone ou WhatsApp</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="agendamento">
                             <button class="accordion-sub flex-items-center-justfy-center">
-                            <span>É necessário pagar algum adiantamento?</span>
+                            <span>Outras formas de contato?</span>
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Instagram, WhatsApp, Facebook</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="agendamento">
@@ -319,7 +317,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body" hidden>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Sim, desde que seja avisado com 24h de antecedência</p>
                             </div>
                         </div>
                     </div>
@@ -340,7 +338,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Varia do procedimento mas em torno de 30 min a 01:30 min.</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="servicos">
@@ -349,7 +347,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Mantenha as unhas hidratadas com cremes e ingestão de água.</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="servicos">
@@ -358,7 +356,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body" hidden>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Sim, para mais informações acesse a seção serviços.</p>
                             </div>
                         </div>
                     </div>
@@ -379,16 +377,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
-                            </div>
-                        </div>
-                        <div class="accordion-body" data-id="pagamento">
-                            <button class="accordion-sub flex-items-center-justfy-center">
-                            <span>Vocês aceitam Pix?</span>
-                            <i class="fi fi-sr-angle-down"></i>
-                            </button>
-                            <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Débito, Crédito e Pix.</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="pagamento">
@@ -397,7 +386,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body" hidden>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Sim, em até 3x sem juros.</p>
                             </div>
                         </div>
                     </div>
@@ -418,7 +407,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>R. Américo Vespúcio, 12 - Sala 01.</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="local">
@@ -427,7 +416,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Terça à sábado, das 08:00 às 18:00.</p>
                             </div>
                         </div>
                         <div class="accordion-body" data-id="local">
@@ -436,7 +425,7 @@
                             <i class="fi fi-sr-angle-down"></i>
                             </button>
                             <div class="accordion-sub-body" hidden>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates!</p>
+                                <p>Estacionamento no local.</p>
                             </div>
                         </div>
                     </div>
